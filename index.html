@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>[IS 445] Homework 6</title>
+    <!-- Link to other files -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <!-- 
+      Original code from Professor and this website
+      https://blog.teamtreehouse.com/create-your-own-to-do-app-with-html5-and-indexeddb
+      with changes for ES6 module and syntax.
+   -->
+  <body>
+    <header>
+      <h1>ToDo List with IndexedDB Demo~</h1>
+      <p>Here is your todo list. You may add, delete, or edit your tasks!</p>
+    </header>
+
+    <div id="page-wrapper">
+      <h1>Todo List</h1>
+      <!-- Form for new Todo Items -->
+      <form id="new-todo-form" method="POST" action="#">
+        <input
+          type="text"
+          name="new-todo"
+          id="new-todo"
+          placeholder="Enter a todo item..."
+          required
+        />
+      </form>
+
+      <!-- Todo Item List -->
+      <ul id="todo-items"></ul>
+
+    </div>
+    <br><p style="font-size: 10px; color: rgb(209, 209, 209)">Created by Sita. April 24, 2019.</p>
+  </body>
+</html>

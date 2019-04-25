@@ -1,0 +1,89 @@
+:root {
+    --todo-bg-color: #c8eeea;    
+    --plain-white: #fff;
+    --greyish: #eeeeee;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 880px;
+  
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(56, 56, 56);;
+    background: var(--greyish);
+}
+  /***************************
+  * Header box on the top
+  */
+  header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    background: rgb(59, 216, 195);
+    padding: 5px;
+    border: 5px solid var(--plain-white);
+  }
+  /* Title in header */
+  h1 {
+      margin-top: 15px;
+      margin-bottom: 0px;
+  }
+  /* Description section in header */
+  p {
+    text-align: center;
+    margin: 20px 10px;
+  }
+  
+  /****************************
+  * Main body section
+  */
+  #page-wrapper {
+    width: 630px;
+    padding: 1px 20px 20px 20px;
+    margin: 1.5em auto;
+    background: var(--plain-white);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  
+  #new-todo-form {
+    padding: 1em 0.9em 0em 0.9em;
+    margin-top: 15px;
+    background: var(--todo-bg-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  #new-todo {
+    width: 95%;
+    padding: 0.5em 0.9em;
+    font-size: 1em;
+    border-color: var(--greyish);
+  }
+  
+  #todo-items {
+    list-style: square;
+    padding: 0.1em 1.3em 0.7em 2.1em;
+    margin: 0;
+    margin-bottom: 10px;
+    background: var(--todo-bg-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  #todo-items li {
+    font-size: 0.9em;
+    padding: 0.5em;
+    background: var(--todo-bg-color);
+    border-bottom: 2px solid var(--plain-white);
+    margin: 0.5em 0;
+  }
+  
+  input[type='checkbox'] {
+    margin-right: 10px;
+  }
+  
